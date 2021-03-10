@@ -1,5 +1,5 @@
-<div fxLayout="column">
-  <div fxLayout="column">
+<div fxLayout="column" fxLayoutGap="40px">
+  <div fxFlex="50" fxLayout="column">
     <h1>Buscar Héroe</h1>
 
     <mat-divider></mat-divider>
@@ -37,13 +37,13 @@
     </mat-form-field>
   </div>
 
-  <!-- <div>
-    <pre>
-      {{ heroeSeleccionado | json }}
-    </pre>
-  </div> -->
-
-  <div class="result-container" *ngIf="heroeSeleccionado">
-    <app-heroe-tarjeta [heroe]="heroeSeleccionado"></app-heroe-tarjeta>
+  <div fxFlex="50" *ngIf="heroeSeleccionado">
+    <div>
+      <pre> {{ heroeSeleccionado | json }}</pre>
+    </div>
+    <!-- <app-heroe-tarjeta
+      fxFlex="40"
+      [heroe]="heroeSeleccionado"
+    ></app-heroe-tarjeta> -->
   </div>
 </div>

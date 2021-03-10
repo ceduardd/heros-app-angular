@@ -6,16 +6,6 @@ import { HeroesService } from '../../services/heroes.service';
 @Component({
   selector: 'app-buscar',
   templateUrl: './buscar.component.html',
-  styles: [
-    `
-      .result-container {
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 32px;
-      }
-    `,
-  ],
 })
 export class BuscarComponent implements OnInit {
   termino: string = '';

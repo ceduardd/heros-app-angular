@@ -26,12 +26,14 @@
       <mat-divider></mat-divider>
       <br />
 
-      <p>{{ heroe.first_appearance }}</p>
-      <p>{{ heroe.characters }}</p>
+      <p><b>Primera aparición:</b> {{ heroe.first_appearance }}</p>
+      <p><b>Personajes:</b> {{ heroe.characters }}</p>
 
       <br />
 
-      <button mat-button class="warn" (click)="regresar()">Regresar</button>
+      <button mat-button mat-raised-button color="primary" (click)="regresar()">
+        Regresar
+      </button>
     </div>
   </div>
 </ng-template>
